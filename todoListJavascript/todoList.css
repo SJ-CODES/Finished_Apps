@@ -1,0 +1,19 @@
+body {
+    background: lightgoldenrodyellow;
+    font-style: italic;
+    font-size: large;
+    font-family: 'Courier New', Courier, monospace;
+    color:brown;
+}
+
+#btnAddTask {
+    background-color:brown;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#taskTextBox {
+    width: 170px;
+
+}
+

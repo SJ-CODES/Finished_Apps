@@ -26,7 +26,6 @@ while True:
             else: 
                 print(f' Table: {pool_table.table_number} ---- Availabile: {pool_table.availability} --- Start Time: {pool_table.start_time} --- Time Used: {pool_table.used_time()}')
     elif option == "2":
-        display_menu()
         table_choice_out = int(input("Which table would you like to check-out: "))
         choice_out = pool_tables[table_choice_out -1] 
         choice_out.check_out_time()
@@ -35,13 +34,14 @@ while True:
             print( "Table is not avaliable choose another one ")
                 
     elif option == "3":
-        display_menu ()
+        
         table_choice_in = int(input("Which table would you like to check-in: "))
         pool_table = pool_tables[table_choice_in -1]
         pool_table.check_in_time()
         with open("pooltable_status.txt","a") as file_object:
             pool_table_st = (f' Table: {pool_table.table_number} ---- Availabile: {pool_table.availability} --- Start Time: {pool_table.start_time} --- End Time: {pool_table.end_time} --- Time Used: {pool_table.used_time()}')
-            file_object.write(f"""{pool_table_st}""")
+            file_object.write(f"""{pool_table_st}
+            """)
         print (f'Table {table_choice_in} was checked back in ')
         print(f' Table: {pool_table.table_number} ---- Availabile: {pool_table.availability} --- Start Time: {pool_table.start_time} --- End Time: {pool_table.end_time} --- Time Used: {pool_table.used_time()}')
             

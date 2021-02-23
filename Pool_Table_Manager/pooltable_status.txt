@@ -1,1 +1,2 @@
-  Table: 12 ---- Availabile: True --- Start Time: 2021-02-12 17:06:35.237339 --- End Time: 2021-02-12 17:06:37.113924 --- Time Used: 0:00:01.876585
+Table: 12 ---- Availabile: True --- Start Time: 2021-02-12 17:06:35.237339 --- End Time: 2021-02-12 17:06:37.113924 --- Time Used: 0:00:01.876585
+Table: 2 ---- Availabile: True --- Start Time: 2021-02-12 21:36:54.254839 --- End Time: 2021-02-12 21:39:09.178620 --- Time Used: 0:02:14.923781
