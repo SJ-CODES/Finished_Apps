@@ -3,7 +3,7 @@
 let btnAddTask = document.getElementById("btnAddTask")
 let taskTextBox = document.getElementById("taskTextBox")
 
-let taskEntered = document.getElementById("taskEntered")
+
 
 let pendingTasks = document.getElementById("pendingTasks")
 let completedTasks = document.getElementById("completedTasks")
@@ -14,7 +14,7 @@ btnAddTask.addEventListener("click", function() {
     let taskName = taskTextBox.value
     let liItem = document.createElement("li")
 
-    liItem.innerHTML = taskName
+   
     
 
 
@@ -34,8 +34,9 @@ btnAddTask.addEventListener("click", function() {
    
    
 
-    // let taskLabel = document.createElement("Label")
-    // taskLabel.innerHTML = task
+    let taskLabel = document.createElement("Label")
+    taskLabel.innerHTML = taskName
+
     let removeButton = document.createElement("button")
     removeButton.innerHTML ="Remove"
     removeButton.addEventListener("click", function() {
@@ -51,7 +52,7 @@ btnAddTask.addEventListener("click", function() {
     
     
     liItem.appendChild(taskCheckBox)
-    // liItem.appendChild(taskLabel)
+    liItem.appendChild(taskLabel)
     liItem.appendChild(removeButton)
 
     pendingTasks.appendChild(liItem)
