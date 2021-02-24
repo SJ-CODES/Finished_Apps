@@ -12,8 +12,10 @@ let completedTasks = document.getElementById("completedTasks")
 btnAddTask.addEventListener("click", function() {
 
     let taskName = taskTextBox.value
+    taskTextBox.value = ""
+    
     let liItem = document.createElement("li")
-
+    
    
     
 

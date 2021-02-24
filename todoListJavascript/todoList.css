@@ -4,6 +4,7 @@ body {
     font-size: large;
     font-family: 'Courier New', Courier, monospace;
     color:brown;
+    text-align: center;
 }
 
 #btnAddTask {
@@ -22,4 +23,5 @@ body > ul {
     margin: 0;
     padding: 0;
 }
+
 
