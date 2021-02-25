@@ -1,15 +1,16 @@
-console.log(dishes)
+// console.log(dishes)
 
 let dishesUL = document.getElementById("dishesUL")
-let entreeDishes = document.getElementById("entreeDishes")
-let starterDishes = document.getElementById("starterDishes")
-let dessertDishes = document.getElementById("dessertDishes")
+// let entreeDishes = document.getElementById("entreeDishes")
+// let starterDishes = document.getElementById("starterDishes")
+// let dessertDishes = document.getElementById("dessertDishes")
 
 
-   displayDishes(dishes)
+//    displayDishes(dishes)
 
 
 function displayDishes (dishesToDisplay){
+    dishesUL.innerHTML = ""
     for(let index = 0; index < dishesToDisplay.length; index++) {
 
         let dish = dishesToDisplay[index]
@@ -33,12 +34,26 @@ function displayDishes (dishesToDisplay){
     
        
     }
-    // let entreeButton = document.createElement("Button")
-    // let entreeButton.innerHTML = "Entree"
-    // entreeButton.addEventListener = ("click" , function() {
-        
-        
-    // })
-    // entreeDishes.appendChild(entreeButton)
+    
+}
+
+let courses = [ "Starters" , "Entrees" , "Desserts"]
+
+let buttonContainer = document.getElementById("courseButtons")
+
+for(let index = 0; index < courses.length; index++ ){
+    let createButton = document.createElement("button")
+    createButton.innerText = courses[index]
+
+    createButton.addEventListener( "click" , function() {
+        console.log(createButton.innerText)
+         let filterDishes = dishes.filter(function(dish){
+             return dish.course == courses[index]
+
+         })
+       console.log(filterDishes)
+       displayDishes(filterDishes)
+    })
+buttonContainer.appendChild(createButton)
 }
 
