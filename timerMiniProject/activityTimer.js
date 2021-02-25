@@ -1,0 +1,1 @@
+const intervalHeading = document.getElementById("intervalHeading")
