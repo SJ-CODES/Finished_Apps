@@ -27,11 +27,11 @@ function displayNews () {
 
         let newsarticleItems = `
                         <li id="newsarticle-items">
-                            <i>${nullCheck(article.author)}</i>
-                            <b>${nullCheck(article.title)}</b>
-                            <i>${nullCheck(article.descritption)}</i>
-                            <img src="${nullCheckImage(article.urlToImage)}">
-                            <i>${nullCheck(article.publishedAt)}</i>      
+                            <i class= "authorName">${nullCheck(article.author)}</i>
+                            <b class="title">${nullCheck(article.title)}</b>
+                            <i class="discription">${nullCheck(article.descritption)}</i>
+                            <img class="images" src="${nullCheckImage(article.urlToImage)}">
+                            <i class="publishedAt">${nullCheck(article.publishedAt)}</i>      
                         </li>
 
         `

@@ -1,0 +1,17 @@
+body{
+    background-color: black;
+}
+
+
+#newsarticle-items {
+    background-color: white;
+    flex-direction: row ;
+    justify-content: right;
+
+}
+
+.images{
+    flex-direction: row;
+    width: 50%;
+}
+
