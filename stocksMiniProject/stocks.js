@@ -2,6 +2,8 @@
 const textBox = document.getElementById("textBox")
 const showQuotesBtn = document.getElementById("showQuotesBtn")
 const quotesOnPage = document.getElementById("quotesOnPage")
+
+
 function displayQuotes (showStock){
     
     
@@ -28,11 +30,7 @@ showQuotesBtn.addEventListener("click" , function() {
             
 })
       
+// how to make price update and show every 2 seconds
 
 
 
-
-// showQuotesBtn.addEventListener("click" , function(){
-//     let quoteName = textBox.value
-//     let liItem = document.createElement("li")
-// })

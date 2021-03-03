@@ -5,13 +5,36 @@ body{
 
 #newsarticle-items {
     background-color: white;
-    flex-direction: row ;
-    justify-content: right;
-
+    align-content: center;
+    
 }
 
-.images{
+.authorName {
+    color: blueviolet;
+    display: flex;
     flex-direction: row;
-    width: 50%;
+
+    
 }
 
+.images {
+    font-display: flex;
+    flex-direction: row;
+    width: 70%;
+    height: 70%;
+
+}
+
+
+.description {
+    color: cyan;
+}
+
+.publishedAt{
+
+}
+
+.title{
+    text
+
+}
